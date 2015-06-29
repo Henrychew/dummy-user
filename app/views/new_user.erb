@@ -1,0 +1,16 @@
+
+<% if !@error.nil? %>
+  <b><%= @error %></b><br>
+<% end %>
+
+<a href="/users/new"> Click here to create new link</a>
+<br><br>
+<div>
+  <form action= "/urls" method= "post">
+    <input type= "text" name= "user[fullname]">
+    <input type= "text" name= "user[email]">
+    <input type= "text" name= "user[password]">
+
+    <input type= "submit" value= "Shorten!">
+  </form>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <form action= "/new_session" method= "post">
+    <h1>Welcome back to BuiltBee</h1>
+    <input type="text" name="email" placeholder= "email"><br><br>
+    <input type="text" name="password" placeholder="password"><br><br>
+    <input type="submit" value="Login">
+  </form>
+
+
+<% if !@error.nil? %>
+  <%= @error %>
+<% end %>
+
+<br>
+<a href="/create"> Click here to Sign up!</a>
+<br><br>
+<a href="/forget_password"> forget password?</a>
+<br><br>
+</div>
+
